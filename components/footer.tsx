@@ -1,6 +1,6 @@
 import React from "react";
 import { BsLinkedin } from "react-icons/bs";
-import { FaBlogger, FaGithubSquare, FaInstagramSquare, FaPhone, FaYoutube } from "react-icons/fa";
+import { FaBlogger, FaGithubSquare, FaInstagramSquare, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
