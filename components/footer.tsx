@@ -54,12 +54,7 @@ export default function Footer() {
         >
           <FaYoutube style={{ fontSize: "1.25rem" }} />
         </a>
-        <a
-          className="text-gray-600 hover:text-gray-900 transition"
-          href="6302956492"
-        >
-          <FaPhone style={{ fontSize: "1.25rem" }} />
-        </a>
+        
   </div>
     </footer>
   );
