@@ -4,7 +4,8 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import women from "@/public/women.jpg";
+import c from "@/public/college.png";
 
 export const links = [
   {
@@ -24,84 +25,81 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Education",
+    hash: "#education",
   },
+ 
   {
     name: "Contact",
     hash: "#contact",
   },
+  
+  
 ] as const;
 
-export const experiencesData = [
+export const educationsData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "B.Tech Pursing",
+    location: "JNTUH University College Of Engineering, Sultanpur",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I'm Currently Pursing B.Tech In 2nd year Computer Scieence & Engineering",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2023 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Polytechnic",
+    location: "Quli Qutub Shah Govt Polytechnic College, Telangana Hyderabad",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I Completed Diploma in Computer Science & Engineering From Quli Qutub Shah Government Polytechnic College Passed Out in 2023 With 9.37 CGPA",
+    icon: React.createElement(LuGraduationCap),
+    date: "2020 - 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "SSC",
+    location: "St Ann's Grammar High School, Telangana Hyderabad",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I Completed SSC Form St. Ann's Grammar High School in 2020 Passed Out With 10.0 GPA",
+    icon: React.createElement(LuGraduationCap),
+    date: "2020",
   },
 ] as const;
 
 export const projectsData = [
+  // {
+  //   title: "CorpComment",
+  //   description:
+  //     "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+  //   tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+  //   imageUrl: corpcommentImg,
+  // },
   {
-    title: "CorpComment",
+    title: "Result Analyzier Local",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A Result Analyzier Model Which Accept a Excel File As Input and it process and display the results of a student for indiviual branch.",
+    tags: ["Next.js", "Redux"],
+    imageUrl: c,
   },
   {
-    title: "rmtDev",
+    title: "Women Safety Application",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A message is immediate sent to the register number, containing the user's geographical location as well as the contact details of a pre-selected list of contacts and call is going to be connected.",
+    tags: ["Java", "Firebase", "XML"],
+    imageUrl: women,
   },
 ] as const;
 
 export const skillsData = [
+  "C",
+  "C++",
+  "Java",
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
   "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
   "Python",
-  "Django",
-  "Framer Motion",
+  "DSA",
+  "SQL",
+ 
 ] as const;
