@@ -6,6 +6,7 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import women from "@/public/women.jpg";
 import c from "@/public/college.png";
+import bmi from "@/public/BMI.png"
 
 export const links = [
   {
@@ -65,13 +66,13 @@ export const educationsData = [
 ] as const;
 
 export const projectsData = [
-  // {
-  //   title: "CorpComment",
-  //   description:
-  //     "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-  //   tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-  //   imageUrl: corpcommentImg,
-  // },
+  {
+    title: "BMI Application",
+    description:
+      "This is an Android application to calculate Body Mass Index (BMI). The app takes input for weight, height in feet, and height in inches to compute the BMI and display whether the user is underweight, healthy, or overweight.",
+    tags: ["Java"],
+    imageUrl: bmi,
+  },
   {
     title: "Result Analyzier Local",
     description:
