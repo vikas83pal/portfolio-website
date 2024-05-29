@@ -6,7 +6,8 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import women from "@/public/women.jpg";
 import c from "@/public/college.png";
-import bmi from "@/public/BMI.png"
+import bmi from "@/public/BMI.png";
+import Todo from "@/public/todolist.png"
 
 export const links = [
   {
@@ -66,6 +67,13 @@ export const educationsData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "TodoList",
+    description:
+      "This is a simple Todo List application built with React. It allows users to add, edit, and delete todo items with descriptions.",
+    tags: ["React","Routes","BootStrap"],
+    imageUrl: Todo,
+  },
   {
     title: "BMI Application",
     description:
