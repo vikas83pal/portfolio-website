@@ -98,6 +98,7 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "BootStrap",
   "C",
   "C++",
   "Java",
