@@ -6,6 +6,8 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import women from "@/public/women.jpg";
 import c from "@/public/college.png";
+import bmi from "@/public/BMI.png";
+import Todo from "@/public/todolist.png"
 
 export const links = [
   {
@@ -65,13 +67,20 @@ export const educationsData = [
 ] as const;
 
 export const projectsData = [
-  // {
-  //   title: "CorpComment",
-  //   description:
-  //     "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-  //   tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-  //   imageUrl: corpcommentImg,
-  // },
+  {
+    title: "TodoList",
+    description:
+      "This is a simple Todo List application built with React. It allows users to add, edit, and delete todo items with descriptions.",
+    tags: ["React","Routes","BootStrap"],
+    imageUrl: Todo,
+  },
+  {
+    title: "BMI Application",
+    description:
+      "This is an Android application to calculate Body Mass Index (BMI). The app takes input for weight, height in feet, and height in inches to compute the BMI and display whether the user is underweight, healthy, or overweight.",
+    tags: ["Java"],
+    imageUrl: bmi,
+  },
   {
     title: "Result Analyzier Local",
     description:
@@ -89,6 +98,7 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "Bootstrap",
   "C",
   "C++",
   "Java",
