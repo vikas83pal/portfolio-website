@@ -8,7 +8,7 @@ import women from "@/public/women.jpg";
 import c from "@/public/college.png";
 import bmi from "@/public/BMI.png";
 import Todo from "@/public/todolist.png"
-import TCT from "@/public/todolist.png";
+import TCT from "@/public/tct.png";
 import SPC from "@/public/spc.png";
 
 export const links = [
