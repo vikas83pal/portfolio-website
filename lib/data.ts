@@ -11,6 +11,7 @@ import Todo from "@/public/todolist.png"
 import TCT from "@/public/tct.png";
 import SPC from "@/public/spc.png";
 
+
 export const links = [
   {
     name: "Home",
@@ -100,14 +101,14 @@ export const projectsData = [
   {
     title: "Tic Tac Toe",
     description:
-      "A move is immediately registered on the game board, updating the current state and showing the player's symbol (X or O) at the chosen position. A notification is sent to the opponent, informing them of their turn, and the game progresses automatically until a player wins, or the board is full, resulting in a draw.",
+      "A move is immediately registered on the game board, updating the current state and showing the player's symbol (X or O) at the chosen position until a player wins, or the board is full, resulting in a draw.",
     tags: ["Html", "CSS", "Javascript"],
     imageUrl: TCT,
   },
   {
     title: "Rock Paper Scissor",
     description:
-     "A move is instantly registered, revealing both the player's and the opponent's choices (rock, paper, or scissors). The system then evaluates the result, announces the winner, and updates the score. If it's a tie, both players are prompted to play again until a winner is determined or the game ends.",
+     "A move is instantly registered, revealing both the player's and the opponent's choices (rock, paper, or scissors). The system then evaluates the result, announces the winner, and updates the score.",
     tags: ["Html", "Css", "Javascript"],
     imageUrl: SPC,
   },
