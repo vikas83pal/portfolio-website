@@ -17,7 +17,7 @@ export interface Project {
   title: string;
   description: string;
   tags: string[];
-  imageUrl: any; // Ensure this type is imported if using Next.js images
+  imageUrl: StaticImageData; // Use StaticImageData for image URLs
   siteLink?: string; // Optional property for project site link
   githubLink?: string; // Optional property for GitHub link
 }
@@ -29,7 +29,7 @@ export const links = [
   { name: "Skills", hash: "#skills" },
   { name: "Education", hash: "#education" },
   { name: "Contact", hash: "#contact" },
-] as const;
+];
 
 export const educationsData = [
   {
@@ -53,7 +53,7 @@ export const educationsData = [
     icon: React.createElement(LuGraduationCap),
     date: "2020",
   },
-] as const;
+];
 
 export const projectsData: Project[] = [
   {
@@ -104,7 +104,7 @@ export const projectsData: Project[] = [
     siteLink: "https://vikas83pal.github.io/sps-game/", // Add your site link here
     githubLink: "https://github.com/vikas83pal/sps-game", // Add your GitHub link here
   },
-] as const;
+];
 
 export const skillsData = [
   "Bootstrap",
@@ -121,4 +121,4 @@ export const skillsData = [
   "Python",
   "DSA",
   "SQL",
-] as const;
+];
