@@ -17,7 +17,7 @@ export interface Project {
   title: string;
   description: string;
   tags: string[];
-  imageUrl: any; // Ensure this type is imported if using Next.js images
+  imageUrl: StaticImageData; // Use StaticImageData for image imports
   siteLink?: string; // Optional property for project site link
   githubLink?: string; // Optional property for GitHub link
 }
@@ -55,6 +55,7 @@ export const educationsData = [
   },
 ] as const;
 
+// Projects data with mutable array
 export const projectsData: Project[] = [
   {
     title: "TodoList",
@@ -104,7 +105,7 @@ export const projectsData: Project[] = [
     siteLink: "https://vikas83pal.github.io/sps-game/", // Add your site link here
     githubLink: "https://github.com/vikas83pal/sps-game", // Add your GitHub link here
   },
-] as const;
+];
 
 export const skillsData = [
   "Bootstrap",
