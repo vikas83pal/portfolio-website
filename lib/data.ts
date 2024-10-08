@@ -17,7 +17,7 @@ export interface Project {
   title: string;
   description: string;
   tags: string[];
-  imageUrl: StaticImageData; // Ensure this type is imported if using Next.js images
+  imageUrl: any; // Ensure this type is imported if using Next.js images
   siteLink?: string; // Optional property for project site link
   githubLink?: string; // Optional property for GitHub link
 }
