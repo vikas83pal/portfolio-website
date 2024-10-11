@@ -124,4 +124,5 @@ export const skillsData = [
   "MongoDB",
   "NodeJs",
   "ExpressJs",
+  "Figma",
 ];
