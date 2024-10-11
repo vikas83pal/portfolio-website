@@ -17,7 +17,7 @@ export interface Project {
   title: string;
   description: string;
   tags: string[];
-  imageUrl: StaticImageData; // Use StaticImageData for image imports
+  imageUrl: StaticImageData; // Use StaticImageData for image URLs
   siteLink?: string; // Optional property for project site link
   githubLink?: string; // Optional property for GitHub link
 }
@@ -29,7 +29,7 @@ export const links = [
   { name: "Skills", hash: "#skills" },
   { name: "Education", hash: "#education" },
   { name: "Contact", hash: "#contact" },
-] as const;
+];
 
 export const educationsData = [
   {
@@ -53,9 +53,8 @@ export const educationsData = [
     icon: React.createElement(LuGraduationCap),
     date: "2020",
   },
-] as const;
+];
 
-// Projects data with mutable array
 export const projectsData: Project[] = [
   {
     title: "TodoList",
@@ -108,18 +107,21 @@ export const projectsData: Project[] = [
 ];
 
 export const skillsData = [
-  "Bootstrap",
   "C",
   "C++",
   "Java",
   "HTML",
   "CSS",
   "JavaScript",
+  "Bootstrap",
+  "Tailwind Css",
   "React",
   "Next.js",
   "Git",
   "GitHub",
-  "Python",
   "DSA",
   "SQL",
-] as const;
+  "MongoDB",
+  "NodeJs",
+  "ExpressJs",
+];
