@@ -10,6 +10,7 @@ import bmi from "@/public/BMI.png";
 import Todo from "@/public/todolist.png";
 import TCT from "@/public/tct.png";
 import SPC from "@/public/spc.png";
+import PORTFOLIO from '@/public/portfolio.png';
 import { StaticImageData } from "next/image"; // Import StaticImageData
 
 // Define the Project type to include siteLink and githubLink
@@ -103,6 +104,14 @@ export const projectsData: Project[] = [
     imageUrl: SPC,
     siteLink: "https://vikas83pal.github.io/sps-game/", // Add your site link here
     githubLink: "https://github.com/vikas83pal/sps-game", // Add your GitHub link here
+  },
+  {
+    title: "Personal WebSite - Portfolio ",
+    description: "This portfolio showcases my projects and skills in web development.",
+    tags: ["TypeScript","JavaScript","CSS","React"],
+    imageUrl: PORTFOLIO,
+    siteLink: "https://vikas83pal.netlify.app", // Add your site link here
+    githubLink: "https://github.com/vikas83pal/portfolio-website", // Add your GitHub link here
   },
 ];
 
