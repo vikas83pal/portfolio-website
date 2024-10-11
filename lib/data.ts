@@ -110,7 +110,7 @@ export const projectsData: Project[] = [
     description: "This portfolio showcases my projects and skills in web development.",
     tags: ["TypeScript","JavaScript","CSS","React"],
     imageUrl: PORTFOLIO,
-    siteLink: "https://vikas83pal.netlify.app", // Add your site link here
+    siteLink: "https://vikas83.netlify.app/", // Add your site link here
     githubLink: "https://github.com/vikas83pal/portfolio-website", // Add your GitHub link here
   },
 ];
