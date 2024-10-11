@@ -107,18 +107,21 @@ export const projectsData: Project[] = [
 ];
 
 export const skillsData = [
-  "Bootstrap",
   "C",
   "C++",
   "Java",
   "HTML",
   "CSS",
   "JavaScript",
+  "Bootstrap",
+  "Tailwind Css",
   "React",
   "Next.js",
   "Git",
   "GitHub",
-  "Python",
   "DSA",
   "SQL",
+  "MongoDB",
+  "NodeJs",
+  "ExpressJs",
 ];
