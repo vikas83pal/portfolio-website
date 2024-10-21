@@ -8,6 +8,7 @@ import women from "@/public/women.jpg";
 import c from "@/public/college.png";
 import bmi from "@/public/BMI.png";
 import Todo from "@/public/todolist.png";
+import cnn from "@/public/cnn.png";
 import TCT from "@/public/tct.png";
 import SPC from "@/public/spc.png";
 import PORTFOLIO from '@/public/portfolio.png';
@@ -112,6 +113,14 @@ export const projectsData: Project[] = [
     imageUrl: PORTFOLIO,
     siteLink: "https://vikas83.netlify.app/", // Add your site link here
     githubLink: "https://github.com/vikas83pal/portfolio-website", // Add your GitHub link here
+  },
+  {
+    title: "Brain Tumor Classification ",
+    description: "Developed a machine learning model to detect brain tumors from MRI images, employing preprocessing techniques and optimizing accuracy through scikit-learn to facilitate early diagnosis.",
+    tags: ["Python","CNN","Kaggle"],
+    imageUrl: cnn,
+    siteLink: "https://github.com/vikas83pal/Brain-Tumor-Detection", // Add your site link here
+    githubLink: "https://www.kaggle.com/code/vikaspal004/tumor-classification-using-keras-for-beginners", // Add your GitHub link here
   },
 ];
 
