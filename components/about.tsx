@@ -19,10 +19,10 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Im Currently Pursing B.Tech 2nd year{" "}
-        <span className="font-medium">In Computer Science & Engineering in JNTIH University College Of Engineering (Sultanpur)</span>, I decided to pursue my
+        Im Currently Pursing B.Tech 3rd year{" "}
+        <span className="font-medium">In Computer Science & Engineering in JNTUH University College Of Engineering (Sultanpur)</span>, I decided to pursue my
         passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">Android development</span>.{" "}
+        <span className="font-medium">Java, Spring boot, Devops</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem. My core stack
@@ -32,7 +32,7 @@ export default function About() {
         </span>
         . I am also familiar with Applet, JDBC and servlets. I am always looking to
         learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a Android
+        <span className="font-medium">full-time position</span> as a Software
         developer.
       </p>
 
