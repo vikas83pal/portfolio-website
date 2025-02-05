@@ -11,6 +11,7 @@ import Todo from "@/public/todolist.png";
 import cnn from "@/public/cnn.png";
 import TCT from "@/public/tct.png";
 import SPC from "@/public/spc.png";
+import ChatApp from "@/public/chatApp.jpeg"
 import PORTFOLIO from '@/public/portfolio.png';
 import { StaticImageData } from "next/image"; // Import StaticImageData
 
@@ -59,13 +60,47 @@ export const educationsData = [
 
 export const projectsData: Project[] = [
   {
+    title: "JNTU Result Analyzer",
+    description: "An interactive React-based platform for automated analysis of student performance, providing detailed insights through reporting mechanisms.",
+    tags: ["React", "Redux", "REST API"],
+    imageUrl: c,
+    siteLink: "https://github.com/vikas83pal/jntuhresults", // Add your site link here
+    githubLink: "https://github.com/vikas83pal/jntuhresults", // Add your GitHub link here
+  },
+  {
+    title: "Women Safety Application",
+    description: "A real-time safety app that shares location and contact details with pre-selected contacts during emergencies, ensuring quick response.",
+    tags: ["Java", "Firebase", "Geolocation"],
+    imageUrl: women,
+    siteLink: "https://github.com/vikas83pal/Women_Saftey_Application/tree/main", // Add your site link here
+    githubLink: "https://github.com/vikas83pal/Women_Saftey_Application/tree/main", // Add your GitHub link here
+  },
+  {
+    title: "Brain Tumor Detection",
+    description: "A YOLO-based deep learning model for accurate brain tumor detection in medical images, leveraging automated preprocessing techniques.",
+    tags: ["Python", "YOLO", "Deep Learning"],
+    imageUrl: cnn,
+    siteLink: "https://github.com/vikas83pal/Brain-Tumor-Detection", // Add your site link here
+    githubLink: "https://www.kaggle.com/code/vikaspal004/tumor-classification-using-keras-for-beginners", // Add your GitHub link here
+  },
+  {
+    title: "Real-Time Chat Application",
+    description: "A WebSocket-based real-time chat app supporting multiple chat rooms, built with Spring Boot and React for seamless messaging.",
+    tags: ["Spring Boot", "React", "WebSocket"],
+    imageUrl: ChatApp, // Replace with the actual image import
+    siteLink: "https://your-chat-app-link.com", // Add your site link here
+    githubLink: "https://github.com/vikas83pal/chat-application", // Add your GitHub link here
+  },
+  {
     title: "TodoList",
     description: "This is a simple Todo List application built with React. It allows users to add, edit, and delete todo items with descriptions.",
     tags: ["React", "Routes", "Bootstrap"],
     imageUrl: Todo,
-    siteLink: "https://vikas83pal.github.io/todo-list-js/", // Add your site link here
-    githubLink: "https://github.com/vikas83pal/todo-list-js", // Add your GitHub link here
+    siteLink: "https://vikas83pal.github.io/todo-list-js/", 
+    githubLink: "https://github.com/vikas83pal/todo-list-js", 
   },
+
+
   {
     title: "BMI Application",
     description: "This is an Android application to calculate Body Mass Index (BMI). The app takes input for weight, height in feet, and height in inches to compute the BMI and display whether the user is underweight, healthy, or overweight.",
@@ -74,22 +109,8 @@ export const projectsData: Project[] = [
     siteLink: "https://github.com/vikas83pal/BMI_APPLICATION/blob/master/apk/app-debug.apk", // Add your site link here
     githubLink: "https://github.com/vikas83pal/BMI_APPLICATION", // Add your GitHub link here
   },
-  {
-    title: "Result Analyzer Local",
-    description: "A Result Analyzer Model Which Accepts an Excel File As Input and it processes and displays the results of a student for individual branches.",
-    tags: ["Next.js", "Redux"],
-    imageUrl: c,
-    siteLink: "https://github.com/vikas83pal/jntuhresults", // Add your site link here
-    githubLink: "https://github.com/vikas83pal/jntuhresults", // Add your GitHub link here
-  },
-  {
-    title: "Women Safety Application",
-    description: "A message is immediately sent to the registered number, containing the user's geographical location as well as the contact details of a pre-selected list of contacts and a call is connected.",
-    tags: ["Java", "Firebase", "XML"],
-    imageUrl: women,
-    siteLink: "https://github.com/vikas83pal/Women_Saftey_Application/tree/main", // Add your site link here
-    githubLink: "https://github.com/vikas83pal/Women_Saftey_Application/tree/main", // Add your GitHub link here
-  },
+  
+  
   {
     title: "Tic Tac Toe",
     description: "A move is immediately registered on the game board, updating the current state and showing the player's symbol (X or O) at the chosen position until a player wins or the board is full, resulting in a draw.",
@@ -114,33 +135,34 @@ export const projectsData: Project[] = [
     siteLink: "https://vikas83.netlify.app/", // Add your site link here
     githubLink: "https://github.com/vikas83pal/portfolio-website", // Add your GitHub link here
   },
-  {
-    title: "Brain Tumor Classification ",
-    description: "Developed a machine learning model to detect brain tumors from MRI images, employing preprocessing techniques and optimizing accuracy through scikit-learn to facilitate early diagnosis.",
-    tags: ["Python","CNN","Kaggle"],
-    imageUrl: cnn,
-    siteLink: "https://github.com/vikas83pal/Brain-Tumor-Detection", // Add your site link here
-    githubLink: "https://www.kaggle.com/code/vikaspal004/tumor-classification-using-keras-for-beginners", // Add your GitHub link here
-  },
+  
 ];
 
 export const skillsData = [
   "C",
   "C++",
   "Java",
+  "Python",
+  "JavaScript",
   "HTML",
   "CSS",
-  "JavaScript",
-  "Bootstrap",
-  "Tailwind Css",
   "React",
   "Next.js",
+  "Spring Boot",
+  "Bootstrap",
+  "Tailwind CSS",
   "Git",
   "GitHub",
-  "DSA",
+  "Docker",
+  "Kubernetes",
+  "Jenkins",
+  "Apache Kafka",
   "SQL",
   "MongoDB",
-  "NodeJs",
-  "ExpressJs",
+  "Node.js",
+  "Express.js",
   "Figma",
+  "Firebase",
+  "WebSocket",
+  "AI/ML",
 ];

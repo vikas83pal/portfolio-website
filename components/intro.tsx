@@ -63,10 +63,18 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Vikas Pal.</span> I'm a{" "}
-        <span className="font-bold">Full Stack Engineering</span> with{" "}
-        <span className="font-bold">1 year</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">Java</span>.
+        <span className="font-bold">Full Stack Engineer</span>,{" "}
+        <span className="font-bold">Spring Boot Developer</span>, and{" "}
+        <span className="font-bold">DevOps Engineer</span> with{" "}
+        <span className="font-bold">1 year</span> of experience. I specialize in{" "}
+        <span className="italic">building high-performance sites, applications, and scalable backend systems</span>.  
+        My core expertise lies in <span className="underline">Java, Spring Boot</span>, and{" "}
+        <span className="underline">Cloud & DevOps</span>. 
+        <br />
+        I'm also an{" "}
+        <span className="font-bold">Aspiring AI/ML Engineer</span>, passionate about exploring machine learning, deep learning, and AI-driven solutions.
+
+
       </motion.h1>
 
       <motion.div
