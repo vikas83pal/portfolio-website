@@ -65,16 +65,36 @@ export default function Intro() {
         <span className="font-bold">Hello, I'm Vikas Pal.</span> I'm a{" "}
         <span className="font-bold">Full Stack Engineer</span>,{" "}
         <span className="font-bold">Spring Boot Developer</span>, and{" "}
-        <span className="font-bold">DevOps Engineer</span> with{" "}
-        <span className="font-bold">1 year</span> of experience. I specialize in{" "}
-        <span className="italic">building high-performance sites, applications, and scalable backend systems</span>.  
-        My core expertise lies in <span className="underline">Java, Spring Boot</span>, and{" "}
-        <span className="underline">Cloud & DevOps</span>. 
+        <span className="font-bold">DevOps Enthusiast</span> with{" "}
+        <span className="font-bold">1 year</span> of professional experience. I
+        specialize in{" "}
+        <span className="italic">
+          building high-performance web applications, scalable backend systems,
+          and efficient CI/CD pipelines
+        </span>
+        . My core tech stack includes{" "}
+        <span className="underline">Java, Spring Boot, React, and Docker</span>,
+        with a strong grasp of{" "}
+        <span className="underline">Cloud & DevOps tools</span> like GitHub
+        Actions and WSL-based development.
         <br />
-        I'm also an{" "}
-        <span className="font-bold">Aspiring AI/ML Engineer</span>, passionate about exploring machine learning, deep learning, and AI-driven solutions.
-
-
+        I'm currently pursuing my B.Tech in CSE from JNTUH and have contributed
+        to <span className="font-bold">Google Summer of Code 2023</span>. I'm
+        passionate about{" "}
+        <span className="italic">
+          open-source development, real-time systems, and impactful tech
+          solutions
+        </span>
+        .
+        <br />
+        Also, I'm an <span className="font-bold">
+          Aspiring AI/ML Engineer
+        </span>{" "}
+        exploring{" "}
+        <span className="italic">
+          machine learning, computer vision, and AI-driven innovations
+        </span>{" "}
+        through research and personal projects.
       </motion.h1>
 
       <motion.div
