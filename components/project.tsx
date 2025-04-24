@@ -1,19 +1,24 @@
-"use client";
-
-import { useRef } from "react";
-import { projectsData } from "@/lib/data";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+import { useRef } from "react";
 
-type ProjectProps = (typeof projectsData)[number];
+// Define the ProjectProps interface
+interface ProjectProps {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: string;
+  siteLink?: string; // Optional
+  githubLink?: string; // Optional
+}
 
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
-  siteLink, // Add site link prop
-  githubLink, // Add GitHub link prop
+  siteLink, // Optional: Site link
+  githubLink, // Optional: GitHub link
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -51,22 +56,26 @@ export default function Project({
 
           {/* New section for site and GitHub links */}
           <div className="mt-4 flex space-x-4">
-            <a
-              href={siteLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg cursor-pointer transition"
-            >
-              Visit Site
-            </a>
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg cursor-pointer transition"
-            >
-              GitHub
-            </a>
+            {siteLink && (
+              <a
+                href={siteLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg cursor-pointer transition"
+              >
+                Visit Site
+              </a>
+            )}
+            {githubLink && (
+              <a
+                href={githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg cursor-pointer transition"
+              >
+                GitHub
+              </a>
+            )}
           </div>
         </div>
 
