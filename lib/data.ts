@@ -69,7 +69,7 @@ export const projectsData: Project[] = [
     description:
       "An AI-powered chatbot that generates contextual scripts based on user prompts using a fine-tuned GPT-2 model. Backend built in Flask and hosted on Hugging Face Spaces, with a React-based frontend.",
     tags: ["Python", "Flask", "Hugging Face", "Transformers", "React"],
-    imageUrl: automated,
+    imageUrl: automated.src, // Convert StaticImageData to string
     siteLink: "https://github.com/vikas83pal/Automated-Script-Generation-ML",
     githubLink: "https://github.com/vikas83pal/Automated-Script-Generation-ML",
   },
@@ -78,7 +78,7 @@ export const projectsData: Project[] = [
     description:
       "A platform that automates result analysis and visualizes student performance using React and Redux, integrated with a RESTful API backend.",
     tags: ["React", "Redux", "REST API"],
-    imageUrl: c,
+    imageUrl: c.src, // Convert StaticImageData to string
     siteLink: "https://github.com/vikas83pal/jntuhresults",
     githubLink: "https://github.com/vikas83pal/jntuhresults",
   },
@@ -87,7 +87,7 @@ export const projectsData: Project[] = [
     description:
       "A safety alert app built in Java that sends live location and user details to emergency contacts. Integrated with Firebase for real-time updates and authentication.",
     tags: ["Java", "Firebase", "Geolocation"],
-    imageUrl: women,
+    imageUrl: women.src, // Convert StaticImageData to string
     siteLink: "https://github.com/vikas83pal/Women_Saftey_Application",
     githubLink: "https://github.com/vikas83pal/Women_Saftey_Application",
   },
@@ -96,7 +96,7 @@ export const projectsData: Project[] = [
     description:
       "A deep learning-based detection system using YOLO for identifying brain tumors in medical imagery. Achieved over 90% accuracy in detection.",
     tags: ["Python", "YOLO", "Deep Learning"],
-    imageUrl: cnn,
+    imageUrl: cnn.src, // Convert StaticImageData to string
     siteLink: "https://github.com/vikas83pal/Brain-Tumor-Detection",
     githubLink: "https://github.com/vikas83pal/Brain-Tumor-Detection",
   },
@@ -105,7 +105,7 @@ export const projectsData: Project[] = [
     description:
       "A real-time messaging platform supporting multi-room chats, built using Spring Boot and React. Employs WebSockets for live communication.",
     tags: ["Spring Boot", "React", "WebSocket"],
-    imageUrl: ChatApp,
+    imageUrl: ChatApp.src, // Convert StaticImageData to string
     siteLink: "https://github.com/vikas83pal/chat-application",
     githubLink: "https://github.com/vikas83pal/chat-application",
   },
@@ -114,7 +114,7 @@ export const projectsData: Project[] = [
     description:
       "A collaborative platform for developers to find and join suitable projects based on skills. Features include project search, messaging, and profile-based suggestions. Currently under development.",
     tags: ["Spring Boot", "React", "MongoDB"],
-    imageUrl: "", // Marking explicitly as in-progress
+    imageUrl: "", // Explicitly empty for in-progress projects
     siteLink: "https://github.com/vikas83pal/DevMatch",
     githubLink: "https://github.com/vikas83pal/DevMatch",
     status: "In Progress",
