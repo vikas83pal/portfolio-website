@@ -14,9 +14,16 @@ export default function Projects() {
       <SectionHeading>What I Have Done</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
-          <React.Fragment key={index}>
-            <Project {...project} />
-          </React.Fragment>
+            <React.Fragment key={index}>
+            <Project
+              title={project.title}
+              description={project.description}
+              tags={project.tags}
+              imageUrl={typeof project.imageUrl === "string" ? project.imageUrl : project.imageUrl.src}
+              siteLink={project.siteLink}
+              githubLink={project.githubLink}
+            />
+            </React.Fragment>
         ))}
       </div>
     </section>
