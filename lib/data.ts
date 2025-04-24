@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
+import { StaticImageData } from "next/image";
 import rmtdevImg from "@/public/rmtdev.png";
 import women from "@/public/women.jpg";
 import c from "@/public/college.png";
@@ -11,19 +12,19 @@ import Todo from "@/public/todolist.png";
 import cnn from "@/public/cnn.png";
 import TCT from "@/public/tct.png";
 import SPC from "@/public/spc.png";
-import ChatApp from "@/public/chatApp.jpeg"
+import ChatApp from "@/public/chatApp.jpeg";
 import PORTFOLIO from '@/public/portfolio.png';
 import automated from "@/public/automated.png";
-import { StaticImageData } from "next/image"; // Import StaticImageData
 
-// Define the Project type to include siteLink and githubLink
+// Define the Project type to include siteLink, githubLink, and status
 export interface Project {
   title: string;
   description: string;
   tags: string[];
-  imageUrl: StaticImageData; // Use StaticImageData for image URLs
+  imageUrl: StaticImageData | string; // Handle both static and external URLs
   siteLink?: string; // Optional property for project site link
   githubLink?: string; // Optional property for GitHub link
+  status?: 'In Progress' | 'Completed'; // Optional status field for tracking project state
 }
 
 export const links = [
@@ -68,7 +69,7 @@ export const projectsData: Project[] = [
     description:
       "An AI-powered chatbot that generates contextual scripts based on user prompts using a fine-tuned GPT-2 model. Backend built in Flask and hosted on Hugging Face Spaces, with a React-based frontend.",
     tags: ["Python", "Flask", "Hugging Face", "Transformers", "React"],
-    imageUrl: automated, // previously used for ML projects
+    imageUrl: automated,
     siteLink: "https://github.com/vikas83pal/Automated-Script-Generation-ML",
     githubLink: "https://github.com/vikas83pal/Automated-Script-Generation-ML",
   },
@@ -116,6 +117,7 @@ export const projectsData: Project[] = [
     imageUrl: "", // Marking explicitly as in-progress
     siteLink: "https://github.com/vikas83pal/DevMatch",
     githubLink: "https://github.com/vikas83pal/DevMatch",
+    status: "In Progress",
   },
 ];
 
@@ -159,4 +161,3 @@ export const skillsData = [
   // AI / ML
   "AI/ML",
 ];
-
