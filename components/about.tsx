@@ -17,32 +17,43 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      
+      <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        Im Currently Pursing B.Tech 3rd year{" "}
-        <span className="font-medium">In Computer Science & Engineering in JNTUH University College Of Engineering (Sultanpur)</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">Java, Spring boot, Devops</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        I’m currently a 3rd-year B.Tech student in{" "}
+        <span className="font-medium">Computer Science & Engineering</span> at{" "}
         <span className="font-medium">
-          Java
+          JNTUH University College of Engineering, Sultanpur
         </span>
-        . I am also familiar with Applet, JDBC and servlets. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a Software
-        developer.
+        . With a strong interest in software development, I’ve built a solid
+        foundation in{" "}
+        <span className="font-medium">Java, Spring Boot, and DevOps</span>{" "}
+        through structured learning, hands-on projects, and continuous
+        exploration.
+        <br />
+        <br />
+        What draws me to programming is the{" "}
+        <span className="italic">problem-solving aspect</span>—the process of
+        analyzing, debugging, and arriving at innovative solutions is something
+        I truly enjoy. My core technology stack revolves around{" "}
+        <span className="font-medium">Java</span>, and I’m also proficient with{" "}
+        <span className="font-medium">Applets, JDBC, and Servlets</span>. I'm
+        committed to staying current with industry trends and continuously
+        learning emerging technologies. I’m currently seeking a{" "}
+        <span className="font-medium">full-time opportunity</span> as a Software
+        Developer where I can apply my skills, grow as a professional, and
+        contribute meaningfully to impactful projects.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my Phone. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to stay spiritual.
+        <span className="italic">Outside of my technical interests</span>, I
+        enjoy playing video games, watching films, and experimenting with mobile
+        tech. I also have a passion for expanding my worldview—currently
+        exploring topics in{" "}
+        <span className="font-medium">
+          history, philosophy, and spirituality
+        </span>
+        , which help me stay grounded and curious beyond the code.
       </p>
     </motion.section>
   );
