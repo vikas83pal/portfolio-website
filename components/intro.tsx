@@ -15,133 +15,150 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
-    <section
-      ref={ref}
-      id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
-    >
-      <div className="flex items-center justify-center">
-        <div className="relative">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
-          >
-            <Image
-              src="/logo.jpg"
-              alt="logo"
-              width="192"
-              height="192"
-              quality="95"
-              priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            />
-          </motion.div>
+    <div className="min-h-screen flex items-center justify-center">
+      <section
+        ref={ref}
+        id="home"
+        className="mb-28 max-w-[75rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      >
+        <div className="flex items-center justify-center">
+          <div className="relative">
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                type: "tween",
+                duration: 0.2,
+              }}
+            >
+              <Image
+                src="/logo.jpg"
+                alt="logo"
+                width="192"
+                height="192"
+                quality="95"
+                priority={true}
+                className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              />
+            </motion.div>
 
-          <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-            👋
-          </motion.span>
+            <motion.span
+              className="absolute bottom-0 right-0 text-4xl"
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 125,
+                delay: 0.1,
+                duration: 0.7,
+              }}
+            >
+              👋
+            </motion.span>
+          </div>
         </div>
-      </div>
 
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        <span className="font-bold">Hello, I'm Vikas Pal.</span> I'm a{" "}
-        <span className="font-bold">Full Stack Engineer</span>,{" "}
-        <span className="font-bold">Spring Boot Developer</span>, and{" "}
-        <span className="font-bold">DevOps Enthusiast</span> with{" "}
-        <span className="font-bold">1 year</span> of professional experience. I
-        specialize in{" "}
-        <span className="italic">
-          building high-performance web applications, scalable backend systems,
-          and efficient CI/CD pipelines
-        </span>
-        . My core tech stack includes{" "}
-        <span className="underline">Java, Spring Boot, React, and Docker</span>,
-        with a strong grasp of{" "}
-        <span className="underline">Cloud & DevOps tools</span> like GitHub
-        Actions and WSL-based development.
-        <br />
-        I'm currently pursuing my B.Tech in CSE from JNTUH and have contributed
-        to <span className="font-bold">Google Summer of Code 2023</span>. I'm
-        passionate about{" "}
-        <span className="italic">
-          open-source development, real-time systems, and impactful tech
-          solutions
-        </span>
-        .
-        <br />
-        Also, I'm an <span className="font-bold">
-          Aspiring AI/ML Engineer
-        </span>{" "}
-        exploring{" "}
-        <span className="italic">
-          machine learning, computer vision, and AI-driven innovations
-        </span>{" "}
-        through research and personal projects.
-      </motion.h1>
+        <motion.h1
+          className="mb-10 mt-4 px-4 text-lg font-medium leading-relaxed sm:text-2xl text-gray-800 dark:text-white"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          <span className="block font-bold text-gray-900 dark:text-white text-2xl sm:text-3xl">
+            Hi, I'm Vikas Pal.
+          </span>
 
-      <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
-      >
-        <Link
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
+          <span className="block mt-3">
+            A passionate <strong>Software Engineer</strong> with strong
+            expertise in <strong>Spring Boot</strong> and a deep interest in{" "}
+            <strong>Artificial Intelligence and Machine Learning</strong>. I
+            specialize in building scalable backend systems, intelligent
+            applications, and modern <strong>DevOps pipelines</strong>.
+          </span>
+
+          <span className="block mt-3">
+            I'm currently pursuing B.Tech in CSE at{" "}
+            <strong>JNTUH College of Engineering, Sultanpur</strong> and
+            recently completed an <strong>internship at IIT Hyderabad</strong>,
+            contributing to impactful software and research projects.
+          </span>
+
+          <span className="block mt-3">
+            I also contributed to <strong>Google Summer of Code 2023</strong>{" "}
+            under <em>AboutCode</em>, focusing on open-source security tooling.
+          </span>
+
+          <span className="block mt-3">
+            My tech stack includes{" "}
+            <u>Java, Spring Boot, React, Docker, and GitHub Actions</u>. I'm
+            also a <strong>Low-Level Design (LLD)</strong> enthusiast,
+            continually refining my ability to design clean, modular, and
+            scalable software architectures with proper use of OOP principles
+            and design patterns.
+          </span>
+
+          <span className="block mt-3">
+            With a solid foundation in both{" "}
+            <strong>software engineering</strong> and <strong>AI/ML</strong>,
+            I'm driven to create intelligent, robust, and scalable solutions
+            that solve real-world problems.
+          </span>
+
+          <span className="block mt-3">
+            I've published research on <strong>women safety application</strong>
+            , won <strong>1st Prize</strong> at <em>Surjana Tech Fest</em>, and
+            ranked <strong>#2 at institute level</strong> on GeeksforGeeks. I'm
+            constantly exploring cutting-edge areas like{" "}
+            <em>computer vision, predictive modeling</em>, and{" "}
+            <em>smart automation</em> through personal projects and internships.
+          </span>
+        </motion.h1>
+
+        <motion.div
+          className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.1,
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
+          <Link
+            href="#contact"
+            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            onClick={() => {
+              setActiveSection("Contact");
+              setTimeOfLastClick(Date.now());
+            }}
+          >
+            Contact me here{" "}
+            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          </Link>
 
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/cv.pdf"
-          download
-        >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
+          <a
+            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+            href="/Vikas_Pal.pdf"
+            download
+          >
+            Download CV{" "}
+            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/vikas-pal-b91067254/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
+          <a
+            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://www.linkedin.com/in/vikas-pal-b91067254/"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/vikas83pal"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
-      </motion.div>
-    </section>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://github.com/vikas83pal"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+        </motion.div>
+      </section>
+    </div>
   );
 }
