@@ -21,15 +21,13 @@ export default function Intro() {
         id="home"
         className="mb-28 max-w-[75rem] text-center sm:mb-0 scroll-mt-[100rem]"
       >
+        {/* Profile Image */}
         <div className="flex items-center justify-center">
           <div className="relative">
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                type: "tween",
-                duration: 0.2,
-              }}
+              transition={{ type: "tween", duration: 0.2 }}
             >
               <Image
                 src="/logo.jpg"
@@ -41,7 +39,6 @@ export default function Intro() {
                 className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
               />
             </motion.div>
-
             <motion.span
               className="absolute bottom-0 right-0 text-4xl"
               initial={{ opacity: 0, scale: 0 }}
@@ -58,68 +55,32 @@ export default function Intro() {
           </div>
         </div>
 
+        {/* Intro Text */}
         <motion.h1
-          className="mb-10 mt-4 px-4 text-lg font-medium leading-relaxed sm:text-2xl text-gray-800 dark:text-white"
+          className="mb-10 mt-4 px-4 text-lg font-medium leading-relaxed sm:text-xl text-gray-800 dark:text-white"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
           <span className="block font-bold text-gray-900 dark:text-white text-2xl sm:text-3xl">
             Hi, I'm Vikas Pal.
           </span>
-
           <span className="block mt-3">
-            A passionate <strong>Software Engineer</strong> with strong
-            expertise in <strong>Spring Boot</strong> and a deep interest in{" "}
-            <strong>Artificial Intelligence and Machine Learning</strong>. I
-            specialize in building scalable backend systems, intelligent
-            applications, and modern <strong>DevOps pipelines</strong>.
-          </span>
-
-          <span className="block mt-3">
-            I'm currently pursuing B.Tech in CSE at{" "}
-            <strong>JNTUH College of Engineering, Sultanpur</strong> and
-            recently completed an <strong>internship at IIT Hyderabad</strong>,
-            contributing to impactful software and research projects.
-          </span>
-
-          <span className="block mt-3">
-            I also contributed to <strong>Google Summer of Code 2023</strong>{" "}
-            under <em>AboutCode</em>, focusing on open-source security tooling.
-          </span>
-
-          <span className="block mt-3">
-            My tech stack includes{" "}
-            <u>Java, Spring Boot, React, Docker, and GitHub Actions</u>. I'm
-            also a <strong>Low-Level Design (LLD)</strong> enthusiast,
-            continually refining my ability to design clean, modular, and
-            scalable software architectures with proper use of OOP principles
-            and design patterns.
-          </span>
-
-          <span className="block mt-3">
-            With a solid foundation in both{" "}
-            <strong>software engineering</strong> and <strong>AI/ML</strong>,
-            I'm driven to create intelligent, robust, and scalable solutions
-            that solve real-world problems.
-          </span>
-
-          <span className="block mt-3">
-            I've published research on <strong>women safety application</strong>
-            , won <strong>1st Prize</strong> at <em>Surjana Tech Fest</em>, and
-            ranked <strong>#2 at institute level</strong> on GeeksforGeeks. I'm
-            constantly exploring cutting-edge areas like{" "}
-            <em>computer vision, predictive modeling</em>, and{" "}
-            <em>smart automation</em> through personal projects and internships.
+            Software Engineer specializing in{" "}
+            <strong>Spring Boot</strong>, <strong>AI/ML</strong>, and scalable
+            backend systems. Experienced in{" "}
+            <u>Java, React, Docker, and DevOps pipelines</u>. Contributed to{" "}
+            <strong>Google Summer of Code 2023</strong> and completed an{" "}
+            <strong>IIT Hyderabad</strong> internship. Passionate about
+            delivering clean, modular, and impactful solutions.
           </span>
         </motion.h1>
 
+        {/* Action Buttons */}
         <motion.div
           className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.1,
-          }}
+          transition={{ delay: 0.1 }}
         >
           <Link
             href="#contact"
@@ -129,7 +90,7 @@ export default function Intro() {
               setTimeOfLastClick(Date.now());
             }}
           >
-            Contact me here{" "}
+            Contact me{" "}
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
 

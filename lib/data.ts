@@ -38,12 +38,12 @@ export const links = [
 
 export const educationsData = [
   {
-    title: "B.Tech in Computer Science & Engineering",
+    title: "B.Tech in Computer Science & Engineering (Lateral Entry)",
     location: "JNTUH University College of Engineering, Sultanpur",
     description:
-      "Currently pursuing my B.Tech in Computer Science & Engineering. I am in my 3rd year and actively exploring core subjects including software development, backend systems, and AI/ML.",
+      "Currently pursuing my B.Tech in Computer Science & Engineering. I am in my final year and actively exploring core subjects including software development, backend systems, and AI/ML.",
     icon: React.createElement(LuGraduationCap),
-    date: "2022 - Expected 2026",
+    date: "2023 - Expected 2026",
   },
   {
     title: "Diploma in Computer Science & Engineering",
@@ -143,6 +143,10 @@ export const skillsData = [
   "WebSocket",
   "Firebase",
 
+  // Databases
+  "SQL",
+  "MongoDB",
+
   // DevOps & Tools
   "Git",
   "GitHub",
@@ -151,13 +155,10 @@ export const skillsData = [
   "Jenkins",
   "Apache Kafka",
 
-  // Database
-  "SQL",
-  "MongoDB",
-
   // Design & Prototyping
   "Figma",
 
-  // AI / ML
-  "AI/ML",
+  // Artificial Intelligence / Machine Learning
+  "Artificial Intelligence (AI)",
+  "Machine Learning (ML)"
 ];
