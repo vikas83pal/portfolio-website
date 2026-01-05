@@ -127,7 +127,7 @@ export default function Intro() {
             transition={{ delay: 0.5 }}
           >
             <div className="stat-card text-center px-6 py-4">
-              <div className="stat-number">300+</div>
+              <div className="stat-number">400+</div>
               <div className="text-sm text-gray-600 dark:text-gray-400">LeetCode Problems</div>
             </div>
             <div className="stat-card text-center px-6 py-4">

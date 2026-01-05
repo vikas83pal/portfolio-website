@@ -93,7 +93,7 @@ export default function About() {
 
             <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-6">
               With{" "}
-              <span className="font-semibold">300+ LeetCode problems solved</span>{" "}
+              <span className="font-semibold">400+ LeetCode problems solved</span>{" "}
               and strong foundations in DSA and OOP, I create robust, scalable
               solutions that merge intelligent systems with efficient architecture.
             </p>
