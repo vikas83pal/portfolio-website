@@ -1,127 +1,67 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
-import { BsLinkedin, BsGithub, BsInstagram, BsYoutube } from "react-icons/bs";
-import { HiHeart } from "react-icons/hi";
-
-const socialLinks = [
-  {
-    icon: BsLinkedin,
-    href: "https://www.linkedin.com/in/vikas-pal-b91067254/",
-    label: "LinkedIn",
-    color: "#0077b5",
-  },
-  {
-    icon: BsGithub,
-    href: "https://github.com/vikas83pal",
-    label: "GitHub",
-    color: "#333",
-  },
-  {
-    icon: BsInstagram,
-    href: "https://www.instagram.com/mr_maddy.786/",
-    label: "Instagram",
-    color: "#e4405f",
-  },
-  {
-    icon: BsYoutube,
-    href: "https://www.youtube.com/channel/UCfkhHDrlxcZF6Q-MtkNq-eA",
-    label: "YouTube",
-    color: "#ff0000",
-  },
-];
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="relative py-12 px-4">
-      {/* Gradient Top Border */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-[#667eea] to-transparent" />
+    <footer className="border-t border-qd-border bg-qd-panel/50">
+      <div className="max-w-[1200px] mx-auto px-6 py-12">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          {/* Left */}
+          <div>
+            <div className="font-display text-lg font-semibold text-qd-text">
+              Vikas Pal
+            </div>
+            <div className="font-mono text-xs text-qd-muted mt-1">
+              Quant Development · Backend Systems · C++
+            </div>
+          </div>
 
-      <div className="max-w-5xl mx-auto">
-        {/* Logo & Tagline */}
-        <motion.div
-          className="text-center mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <h3 className="text-2xl font-bold gradient-text mb-2">Vikas Pal</h3>
-          <p className="text-gray-600 dark:text-gray-400">
-            Building the future, one line of code at a time.
-          </p>
-        </motion.div>
-
-        {/* Social Links */}
-        <motion.div
-          className="flex justify-center gap-4 mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-        >
-          {socialLinks.map((social, index) => (
-            <motion.a
-              key={social.label}
-              href={social.href}
+          {/* Center Links */}
+          <div className="flex items-center gap-6">
+            <a
+              href="https://github.com/vikas83pal"
               target="_blank"
               rel="noopener noreferrer"
-              className="social-link text-gray-600 dark:text-gray-400"
-              whileHover={{ y: -4, scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05 }}
-              aria-label={social.label}
+              className="font-mono text-xs text-qd-muted hover:text-qd-accent transition-colors"
+              id="footer-github"
             >
-              <social.icon className="w-5 h-5" />
-            </motion.a>
-          ))}
-        </motion.div>
-
-        {/* Quick Links */}
-        <motion.div
-          className="flex flex-wrap justify-center gap-6 mb-8 text-sm"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-        >
-          {["Home", "About", "Projects", "Skills", "Contact"].map((link) => (
-            <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
-              className="text-gray-600 dark:text-gray-400 hover:text-[#667eea] dark:hover:text-[#667eea] transition-colors"
-            >
-              {link}
+              GitHub
             </a>
-          ))}
-        </motion.div>
-
-        {/* Divider */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent mb-6" />
-
-        {/* Copyright */}
-        <motion.div
-          className="text-center"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-        >
-          <p className="text-sm text-gray-500 dark:text-gray-500 flex items-center justify-center gap-1">
-            © {currentYear} Vikas Pal. Made with{" "}
-            <motion.span
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 1, repeat: Infinity }}
+            <a
+              href="https://www.linkedin.com/in/vikas-pal-b91067254/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs text-qd-muted hover:text-qd-accent transition-colors"
+              id="footer-linkedin"
             >
-              <HiHeart className="w-4 h-4 text-red-500" />
-            </motion.span>{" "}
-            using Next.js & Framer Motion
-          </p>
-        </motion.div>
+              LinkedIn
+            </a>
+            <a
+              href="mailto:vikas83pal@gmail.com"
+              className="font-mono text-xs text-qd-muted hover:text-qd-accent transition-colors"
+              id="footer-email"
+            >
+              Email
+            </a>
+          </div>
+
+          {/* Right */}
+          <div className="text-center md:text-right">
+            <div className="font-mono text-[0.6rem] text-qd-dim leading-relaxed">
+              Built with curiosity, algorithms,
+              <br />
+              and too many terminal windows.
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="mt-8 pt-6 border-t border-qd-border/50 text-center">
+          <span className="font-mono text-[0.55rem] text-qd-dim">
+            © {new Date().getFullYear()} Vikas Pal · All rights reserved
+          </span>
+        </div>
       </div>
     </footer>
   );

@@ -1,37 +1,42 @@
 import Header from "@/components/header";
 import "./globals.css";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
-import ThemeContextProvider from "@/context/theme-context";
-import { Toaster } from "react-hot-toast";
-import ParticleBackground from "@/components/particles";
-import AuroraBackground from "@/components/aurora-background";
+import EngineeringTerminal from "@/components/engineering-terminal";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space" });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space",
+});
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
 
 export const metadata = {
-  title: "Vikas Pal | Software Development Engineer | Portfolio",
+  title:
+    "Vikas Pal | Quant Developer · Low-Latency Systems · Backend Engineering",
   description:
-    "Vikas Pal - Software Development Engineer specializing in Spring Boot, AI/ML, and scalable backend systems. GSoC'23 Contributor, IIT Hyderabad Intern.",
+    "Vikas Pal — Computer Science engineer building high-performance software at the intersection of algorithms, C++, backend systems, and quantitative trading infrastructure. Open to Quant Developer, Low-Latency C++ Engineer, and Backend Engineer roles.",
   keywords: [
     "Vikas Pal",
-    "Software Engineer",
+    "Quant Developer",
+    "Low-Latency Engineer",
+    "C++ Engineer",
     "Backend Developer",
-    "Full Stack Developer",
-    "AI ML Engineer",
-    "Spring Boot",
-    "Java Developer",
-    "GSoC",
+    "Systems Engineer",
+    "Quantitative Trading",
+    "Algorithms",
+    "Competitive Programming",
     "Portfolio",
   ],
   authors: [{ name: "Vikas Pal" }],
   openGraph: {
-    title: "Vikas Pal | Software Development Engineer",
+    title: "Vikas Pal | Quant Developer · Low-Latency Systems · Backend Engineering",
     description:
-      "Software Engineer specializing in Spring Boot, AI/ML, and scalable backend systems.",
+      "Building high-performance software at the intersection of algorithms, C++, backend systems, and quantitative trading infrastructure.",
     type: "website",
   },
 };
@@ -42,37 +47,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en" className="!scroll-smooth dark">
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} font-sans bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-[#0a0a1a] dark:text-gray-50 dark:text-opacity-90 overflow-x-hidden`}
+        className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans bg-[#080a0f] text-[#e2e8f0] overflow-x-hidden`}
       >
-        {/* Aurora Background */}
-        <AuroraBackground />
-        
-        {/* Particle Background */}
-        <ParticleBackground />
-
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-
-            <Toaster
-              position="top-right"
-              toastOptions={{
-                style: {
-                  background: "rgba(255, 255, 255, 0.9)",
-                  backdropFilter: "blur(10px)",
-                  border: "1px solid rgba(102, 126, 234, 0.2)",
-                  borderRadius: "12px",
-                  boxShadow: "0 10px 40px rgba(0, 0, 0, 0.1)",
-                },
-              }}
-            />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
-        </ThemeContextProvider>
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+          <Footer />
+          <EngineeringTerminal />
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );

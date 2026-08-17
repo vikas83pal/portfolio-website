@@ -1,20 +1,18 @@
-import About from "@/components/about";
-import Contact from "@/components/contact";
-import Experience from "@/components/education";
-import Intro from "@/components/intro";
+import Hero from "@/components/hero";
+import WhyQuant from "@/components/why-quant";
+import TechStack from "@/components/tech-stack";
 import Projects from "@/components/projects";
-import SectionDivider from "@/components/section-divider";
-import Skills from "@/components/skills";
+import { ResearchSection } from "@/components/research-experience";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
-      <Intro />
-      <SectionDivider />
-      <About />
+    <main>
+      <Hero />
+      <WhyQuant />
+      <TechStack />
       <Projects />
-      <Skills />
-      <Experience />
+      <ResearchSection />
       <Contact />
     </main>
   );
