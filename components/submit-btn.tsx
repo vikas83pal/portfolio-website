@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import type {} from "react-dom/experimental";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
 import { motion } from "framer-motion";
 import { FaPaperPlane } from "react-icons/fa";
