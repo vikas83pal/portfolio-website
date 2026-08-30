@@ -1,5 +1,6 @@
 export const links = [
   { name: "Home", hash: "#home" },
+  { name: "About", hash: "#about" },
   { name: "Why Quant", hash: "#why-quant" },
   { name: "Stack", hash: "#stack" },
   { name: "Projects", hash: "#projects" },
@@ -14,7 +15,11 @@ export const heroTerminalLines = [
     output: "quant-development\nlow-latency-systems\nbackend-engineering",
   },
   { prompt: "$ stack", output: "C++ · Python · Java · Linux · SQL" },
-  { prompt: "$ status", output: "OPEN_TO_QUANT_OPPORTUNITIES", isStatus: true },
+  {
+    prompt: "$ status",
+    output: "OPEN_TO_QUANT_OPPORTUNITIES",
+    isStatus: true,
+  },
 ];
 
 export const engineeringMetrics = [
