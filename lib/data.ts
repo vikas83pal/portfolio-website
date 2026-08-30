@@ -5,6 +5,7 @@ export const links = [
   { name: "Stack", hash: "#stack" },
   { name: "Projects", hash: "#projects" },
   { name: "Research", hash: "#research" },
+  { name: "Education", hash: "#education" },
   { name: "Contact", hash: "#contact" },
 ] as const;
 
