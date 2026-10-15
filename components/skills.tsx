@@ -28,7 +28,6 @@ import {
   SiGit,
   SiGithub,
   SiApachekafka,
-  SiFigma,
   SiFirebase,
   SiTensorflow,
   SiPytorch,
@@ -36,7 +35,21 @@ import {
 import { FaJava } from "react-icons/fa";
 import { HiChip, HiLightningBolt } from "react-icons/hi";
 
-const skillCategories = [
+type SkillIcon = React.ComponentType<{ className?: string }>;
+
+type Skill = {
+  name: string;
+  icon: SkillIcon;
+};
+
+type SkillCategory = {
+  title: string;
+  icon: SkillIcon;
+  gradient: string;
+  skills: Skill[];
+};
+
+const skillCategories: SkillCategory[] = [
   {
     title: "Languages",
     icon: HiLightningBolt,
@@ -45,6 +58,7 @@ const skillCategories = [
       { name: "Java", icon: FaJava },
       { name: "Python", icon: SiPython },
       { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
       { name: "C++", icon: SiCplusplus },
       { name: "C", icon: SiC },
     ],
@@ -110,17 +124,20 @@ const skillCategories = [
 ];
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView("Stack");
 
   return (
     <section
-      id="skills"
+      id="stack"
       ref={ref}
       className="mb-28 max-w-6xl mx-auto scroll-mt-28 px-4 sm:mb-40"
     >
-      <SectionHeading>Technical Skills</SectionHeading>
+      <SectionHeading>Technical Stack</SectionHeading>
+
       <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-        A comprehensive toolkit of technologies I use to bring ideas to life
+        A comprehensive toolkit of technologies I use to build
+        high-performance software, backend systems, and quantitative
+        applications.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -130,38 +147,52 @@ export default function Skills() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
+            transition={{
+              duration: 0.5,
+              delay: categoryIndex * 0.1,
+            }}
             className="group"
           >
             <div className="glass rounded-2xl p-6 h-full border border-gray-200/50 dark:border-white/10 hover:border-transparent transition-all duration-300 hover:shadow-2xl">
-              {/* Category Header */}
               <div className="flex items-center gap-3 mb-6">
                 <div
                   className={`w-12 h-12 rounded-xl bg-gradient-to-r ${category.gradient} flex items-center justify-center text-white shadow-lg`}
                 >
                   <category.icon className="w-6 h-6" />
                 </div>
+
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                   {category.title}
                 </h3>
               </div>
 
-              {/* Skills Grid */}
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
                     key={skill.name}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+                    initial={{
+                      opacity: 0,
+                      scale: 0.8,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      scale: 1,
+                    }}
                     viewport={{ once: true }}
                     transition={{
                       duration: 0.3,
-                      delay: categoryIndex * 0.1 + skillIndex * 0.05,
+                      delay:
+                        categoryIndex * 0.1 +
+                        skillIndex * 0.05,
                     }}
-                    whileHover={{ scale: 1.05, y: -2 }}
+                    whileHover={{
+                      scale: 1.05,
+                      y: -2,
+                    }}
                     className="skill-badge flex items-center gap-2 cursor-default"
                   >
                     <skill.icon className="w-4 h-4 text-gray-600 dark:text-gray-400 group-hover:text-current" />
+
                     <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                       {skill.name}
                     </span>
